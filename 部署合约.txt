@@ -1,0 +1,20 @@
+
+//部署合约
+npx hardhat run --network testnet scripts/deploy.js
+
+//验证合约
+npx hardhat verify --network testnet 
+
+//如果验证报错  
+1、Delete artifacts and cache folders
+2、run npx hardhat compile
+3、then verify
+
+
+npx hardhat verify --network testnet $ADDRESS --contract contracts/SRT.sol:SRT
+
+
+测试Swap路由: 0xB6BA90af76D139AB3170c7df0139636dB6120F7e
+
+USDT: 0xEdA5dA0050e21e9E34fadb1075986Af1370c7BDb
+
